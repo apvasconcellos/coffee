@@ -1,0 +1,94 @@
+.about{
+    display: flex;
+    margin: 0 20px;
+    
+}
+.tomou_cafe{
+  width: 60%;
+  min-width: 500px;
+  height: 90vh;
+  max-height: 500px;
+  position: relative;
+  /* margin-right: 10px; */
+  margin-bottom: 30px;
+  
+}
+
+.tomou_cafe h2{
+font-size: 50px;
+font-family: 'Stick No Bills', sans-serif;
+letter-spacing: 2px;
+margin-left: 10px
+}
+
+.tomou_cafe h4{
+    font-size: 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 2px;
+    margin-left: 10px
+}
+
+
+.coffe {
+    position: absolute;
+    /* bottom: -450px; */
+    right: 0vw;
+    /* width: 1200px;
+    height: 1200px; */
+    border-radius: 50%; 
+    background-color:  var(--color-four);
+    width:550px;
+    height: 75vh;
+    z-index: 1;
+    margin-right: 10px
+}
+
+.coffe-img img {
+    position: absolute;
+    right: 6vw;
+
+width: 600px;
+z-index: 2;
+}
+
+/* .coffe img:hover {
+    width: 410px
+} */
+
+.type-coffe{
+    display: flex;
+    margin: 5px;
+    padding-top: 30px
+}
+
+.type-one{
+border-radius: 50%; 
+width: 200px;
+height: 200px;
+margin: 10px;
+background-color: var(--color-one);
+align-items: center;
+justify-content: center;
+display: flex
+}
+
+.type-two{
+border-radius: 50%; 
+width: 200px;
+height: 200px;
+margin: 10px;
+background-color: var(--color-two);
+align-items: center;
+justify-content: center;
+display: flex
+}
+.type-three{
+border-radius: 50%; 
+width: 200px;
+height: 200px;
+margin: 10px;
+background-color: var(--color-three);
+align-items: center;
+justify-content: center;
+display: flex
+}

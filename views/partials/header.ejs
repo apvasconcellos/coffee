@@ -1,0 +1,47 @@
+<header>
+    <section class="container">
+        <a href="/admin"><img class="logo" src="images/coffee-beans.png" alt="logo"></a>
+        
+        <nav>
+            <div class="navbar">
+                <ul>
+                    <li><a href="/">Inicio</a>
+                    <li><a href="/cafe">Café</a></li>
+                    <!-- <li><a href="/faleconosco">Fale Conosco</a></li> -->
+                </ul>
+            </div>
+            <div class="navbar-acesso">
+                <% if (!usuario){ %>
+                <ul>
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/cadastro">Cadastro</a></li>
+                </ul>
+                <%}else{%>
+                    <div class ="navbar-log-true">
+                    <div class="navbar-saudacao">
+                    Olá, <%= usuario.nome %>
+                        
+                    </div>
+                      <div class="carrinho">
+                          <div>
+                              Carrinho
+                          </div>
+                          <div>
+                              <img src="images/fi-rr-shopping-cart.svg" alt="">
+                          </div>
+                      </div>
+                      <div class= "logout">
+                          <div>
+                        <a href="/logout"> Sair
+                        </div>
+                        <div>
+                            <img  src="images/fi-rr-sign-out.svg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                <%}%>
+                
+            </div>
+        </nav>
+    </section>
+</header>

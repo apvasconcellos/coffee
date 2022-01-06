@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><%= title  %> </title>
+        <link rel="icon" href="images/fatia-de-pizza.png">
+        <link rel="stylesheet" href='/stylesheets/reset.css'>
+        <link rel="stylesheet" href='/stylesheets/admin.css'>
+        <link rel='stylesheet' href='/stylesheets/style.css'>
+    
+    </head>
+<body class="body-admin">
+    <div class="back">
+        <a href="/"><img src="images/arrow.png" alt=""> Inicio</a>
+        </div>
+    <div class="admin-display">
+    <div class= "admin-background">
+
+    </div>
+    <div class="admin-form">
+    <section class="admin-box">
+        <article class="admin-box-img">
+            <img class="logo"src="images/—Pngtree—pizza logo_3744946.png" alt="logo">
+            
+        </article>
+        <article>
+            <form action="/admin" method="POST">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" required>
+            
+                <div class="button">
+                    <button type="submit">Entrar</button>
+                </div>
+            </form>
+        </article>
+    </section>
+    </div>
+</div>
+
+</body>
+</html>

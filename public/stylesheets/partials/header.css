@@ -1,0 +1,85 @@
+header{
+    padding: 0;
+    background-color: var(--color-one);
+    box-shadow: 0 0 5px 0 var(--color-one);
+    margin: 0 0 20px 0;
+}
+.container {
+    display: flex;
+    justify-content:space-between;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    font-size:large;
+}
+.logo {
+width:100px
+}
+nav {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100vw;
+}
+.navbar{
+    width:40%;
+    font-size: x-large;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0 10px;
+}
+  
+.navbar-acesso{
+    width:30%
+}
+  
+.navbar a {
+    margin: 10px;
+}
+.navbar-acesso ul{
+    display: flex;
+    justify-content:space-between;
+    margin: 0 10px;
+    font-size: x-large;
+}
+.navbar-log-true{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--color-secondary);
+    font-size: x-large;
+}
+.navbar-log-true :hover{
+    font-size:xx-large;
+    color: var(--color-four);
+    transition: 0.3s
+}
+  
+.navbar-saudacao{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+.logout {
+    display: flex;
+    align-items: center;
+}
+.logout img{
+    width: 30px;
+    margin: 10px;
+    
+}
+  .carrinho{
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .carrinho img{
+    width: 30px;
+    margin: 10px;
+  }

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title  %> </title>
+    <link rel="icon" href="images/fatia-de-pizza.png">
+    <link rel="stylesheet" href='/stylesheets/reset.css'>
+    <link rel='stylesheet' href='/stylesheets/style.css'>
+    <link rel='stylesheet' href='/stylesheets/partials/header.css'>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+    // const api = () => axios.create({
+    // baseUrl: 'https://viacep.com.br/ws/'
+    // })
+    async function getAdress () {
+        const cep = document.getElementById('CEP')
+        console.log(cep, "oi")
+        const {data: adresse } = await axios.get(`https://viacep.com.br/ws/${cep}/json`)
+        console.log(cep, adresse, "oi")
+        JSON.stringify(adresse, null, 2)
+    }
+    
+    </script>
+
+    
+</head>
+<body class= body-cadastro>
+    <div class="back">
+    <a href="/"><img src="images/arrow.png" alt=""> Inicio</a>
+    </div>
+
+    <pre><%=JSON.stringify(locals, null, 2)%></pre>
+    
+
+   
+    <section class="cadastro">
+    <article class="top-cadastro">
+    
+    <h4>Onde você quer receber seu pedido?</h4>
+    </article>
+    <article class="formulario-article">
+        <!-- <form  method="get"> -->
+            <!-- </form> -->
+            <form action="/location" method="post" class="formulario">
+                <div class="form">
+                    <label for="CEP">CEP:</label>
+                    <input type="text" id="CEP" name="CEP"  required>
+                    <button type='button' onclick="getAdress()">Buscar </button>
+                    
+                    
+                </div>
+    
+    
+        <div class="form">
+            <label for="rua">Rua:</label>
+            <input type="text" id="rua" name="rua"  required>
+        </div>
+    
+        <div class="form">
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" name="numero" required>
+        </div>
+
+        <div class="form">
+            <label for="complemento">Complemento:</label>
+            <input type="text" id="complemento" name="complemento" placeholder="informação adicional" required>
+        </div>
+
+        <div class="form">
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" required>
+        </div>
+
+        <div class="form">
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+        </div>
+
+        <div class="form">
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required>
+        </div>
+
+        
+        <div class="button">
+            <button type="submit">Cadastrar</button>
+        </div>
+    </form>
+    
+
+    </article>
+    </section>
+</body>
+</html>

@@ -1,0 +1,109 @@
+.back{
+    /* margin: 12px;
+    background-color: var(--color-two);
+    box-shadow: 0px -1px 7px 0px var(--color-primary);
+    border-radius: 8px; */
+    margin: 12px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+    align-items: center;
+  }
+  .back img{
+    width:15px;
+  }
+  .back a{
+    font-size: x-large;
+    color: var(--color-primary);
+  }
+  .cadastro{
+    position: relative;
+    margin: 10px auto 
+  }
+  
+  .top-cadastro{
+    text-align: center;
+    padding: 10px 0
+  }
+  
+  .top-cadastro h1{
+    font-size: 2.3rem;
+    margin: 10px auto;
+    color: var(--color-primary)
+  }
+  .top-cadastro h4{
+    font-size: 1.3rem;
+    margin: 0 auto;
+    color: var(--color-secondary)
+  }
+  
+  .formulario-article{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .formulario{
+    width: 60%;
+    min-width: 320px;
+    margin: 0 auto;
+  }
+  .form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  input {
+    width: 80%;
+      height: 30px;
+      border-radius: 5px;
+      background-color: var(--color-four);
+      border: none;
+      margin: 10px;
+      font-size: 15px
+  }
+  label {
+    color: var(--color-primary);
+    font-size: 1 rem;
+  }
+  
+  .back:hover{
+    font-size: xx-large;
+    text-decoration:underline;
+    width: 100px;
+    opacity:40%
+  }
+  .back a:hover{
+    color:var(--color-one)
+  }
+  .button{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+  }
+  button[type="submit"] {
+    border: none;
+    cursor: pointer;
+    color: var(--color-primary);
+    font-weight: 800;
+    background-color:var(--color-two);
+    padding: 10px 8px;
+    margin: 10px;
+    border-radius:8px;
+    align-items: center;
+    justify-content:center;
+    text-transform: uppercase;
+  }
+  
+  
+  button:hover{
+    color: var(--color-two);
+    font-weight: 850;
+    background-color:var(--color-primary);
+    width:110px;
+    height: 40px;
+    padding: 8px 0;
+    transition: 0.4s
+  }
+  

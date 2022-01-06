@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%= title %></title>
+    <link rel="icon" href="images/coffee-beans.png">
+    <link rel="stylesheet" href='/stylesheets/reset.css'>
+    <link rel="stylesheet" href='stylesheets/cadastro.css'>
+    <link rel='stylesheet' href='/stylesheets/partials/header.css'>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+
+</head>
+<body class= body-cadastro>
+    <div class="back">
+    <a href="/"><img src="images/arrow.png" alt=""> Inicio</a>
+    </div>
+    <section class="cadastro">
+    <article class="top-cadastro">
+    <h1>Cadastre-se</h1>
+    <h4>Crie uma conta rápido e fácil!</h4>
+    </article>
+    <article class="formulario-article">
+    <form action="/cadastro" method="post" class="formulario">
+    
+        <div class="form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" required>
+        </div>
+    
+        <div class="form">
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite o seu nome" required required>
+        </div>
+    
+        
+        <div class="form">
+            <label for="cpf">CPF:</label>
+            <input type="number" id="cpf" name="cpf" required>
+        </div>
+    
+        <div class="form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite o seu email" required>
+        </div>
+
+        <div class="form">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+        </div>
+    
+        <div class="form">
+            <label for="confirma">Confirmar senha:</label>
+            <input type="password" id="confirma" name="confirma" required>
+        </div>
+        
+        <div class="button">
+            <button type="submit">Cadastrar</button>
+        </div>
+    </form>
+    </article>
+    </section>
+</body>
+</html>
